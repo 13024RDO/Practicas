@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .cart-list{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .cart-item{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Carrito de Compras</h1>
+    <!-- boton para agregar productos -->
+    <button onclick="agregarAlCarrito('Producto 1', 10.00)">Agregar Producto 1</button>
+    <button onclick="agregarAlCarrito('Producto 2', 20.00)">Agregar Producto 2</button>
+
+
+    <!-- carrito de compras -->
+    <h2>Carrito</h2>
+    <ul class="cart-list" id="carrito">
+<!-- aqui se agregan dinamicamente los elementos del carrito -->
+    </ul>
+
+
+<!-- Total del carrito -->
+ <h3>Total: <span id="total">0.00</span></h3>
+
+    <script src="app.js"></script>
+</body>
+</html>
